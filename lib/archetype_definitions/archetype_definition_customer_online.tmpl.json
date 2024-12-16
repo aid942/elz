@@ -1,0 +1,23 @@
+{
+
+    "Company_Policies": {
+  
+      "policy_assignments": ["appendRgTagsAssignment"],
+  
+      "policy_definitions": [],
+  
+      "policy_set_definitions": [],
+  
+      "role_definitions": [],
+  
+      "archetype_config": {
+  
+        "parameters": {},
+  
+        "access_control": {}
+  
+      }
+  
+    }
+  
+  }

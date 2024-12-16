@@ -1,9 +1,12 @@
 {
+  "name": "appendTagsToRG",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "apiVersion": "2021-06-01",
+  "scope": null,
     "properties": {
       "displayName": "appendTagsToRG",
       "policyType": "Custom",
       "mode": "All",
-      "name": "appendTagsToRG",
       "description": "Adds the specified tag and value when any resource group missing this tag is created or updated. Existing resource groups can be remediated by triggering a remediation task. If the tag exists with a different value it will not be changed.",
       "metadata": {
         "version": "1.0.0",
