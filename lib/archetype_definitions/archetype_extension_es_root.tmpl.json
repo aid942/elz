@@ -1,7 +1,7 @@
 {
     "extend_es_root": {
       "policy_assignments": [],
-      "policy_definitions": ["Add a tag to resource group"],
+      "policy_definitions": ["appendTagsToRG"],
       "policy_set_definitions": [],
       "role_definitions": [],
       "archetype_config": {
