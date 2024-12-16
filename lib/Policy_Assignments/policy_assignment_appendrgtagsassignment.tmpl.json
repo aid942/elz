@@ -6,25 +6,25 @@
         "description": "Appends Tags to new resource group deployments",
         "displayName": "Append Tags to new resource group deployments",
         "parameters": {
-            "tagName": {
+            "tagValue": {
                 "value": "AppID"
             },
-            "tagName2": {
+            "tagValue2": {
                 "value": "CRIS"
             },
-            "tagName3": {
+            "tagValue3": {
                 "value": "Compliance"
             },
-            "tagName4": {
+            "tagValue4": {
                 "value": "DataClassfication"
             },
-            "tagName5": {
+            "tagValue5": {
                 "value": "Environment"
             },
-            "tagName6": {
+            "tagValue6": {
                 "value": "Notify"
             },
-            "tagName7": {
+            "tagValue7": {
                 "value": "Owner"
             }
         },
