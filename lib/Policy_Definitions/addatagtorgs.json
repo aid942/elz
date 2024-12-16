@@ -1,0 +1,173 @@
+{
+    "properties": {
+      "displayName": "Add a tag to resource groups",
+      "policyType": "Custom",
+      "mode": "All",
+      "name": "Add a tag to resource group",
+      "description": "Adds the specified tag and value when any resource group missing this tag is created or updated. Existing resource groups can be remediated by triggering a remediation task. If the tag exists with a different value it will not be changed.",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Tags"
+      },
+      "version": "1.0.0",
+      "parameters": {
+        "tagName": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName2": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue2": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName3": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue3": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName4": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue4": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName5": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue5": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName6": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue6": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        },
+        "tagName7": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'environment'"
+          }
+        },
+        "tagValue7": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as 'production'"
+          }
+        }
+      },
+      "policyRule": {
+        "if": {
+          "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.Resources/subscriptions/resourceGroups"
+            },
+            {
+              "field": "[concat('tags[', parameters('tagName'), ']')]",
+              "exists": "false"
+            }
+          ]
+        },
+        "then": {
+          "effect": "modify",
+          "details": {
+            "roleDefinitionIds": [
+              "/providers/microsoft.authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+            ],
+            "operations": [
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName'), ']')]",
+                "value": "[parameters('tagValue')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName2'), ']')]",
+                "value": "[parameters('tagValue2')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName3'), ']')]",
+                "value": "[parameters('tagValue3')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName4'), ']')]",
+                "value": "[parameters('tagValue4')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName5'), ']')]",
+                "value": "[parameters('tagValue5')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName6'), ']')]",
+                "value": "[parameters('tagValue6')]"
+              },
+              {
+                "operation": "add",
+                "field": "[concat('tags[', parameters('tagName7'), ']')]",
+                "value": "[parameters('tagValue7')]"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

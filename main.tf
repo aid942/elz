@@ -30,14 +30,14 @@ module "enterprise_scale" {
 
   configure_connectivity_resources = local.configure_connectivity_resources
   deploy_connectivity_resources    = var.deploy_connectivity_resources
-  subscription_id_connectivity     = var.subscription_id_connectivity
+  # subscription_id_connectivity     = var.subscription_id_connectivity
 
   configure_management_resources = local.configure_management_resources
   deploy_management_resources    = var.deploy_management_resources
-  subscription_id_management     = var.subscription_id_management
+  # subscription_id_management     = var.subscription_id_management
 
   configure_identity_resources = local.configure_identity_resources
   deploy_identity_resources    = var.deploy_identity_resources
-  subscription_id_identity     = var.subscription_id_identity
+  # subscription_id_identity     = var.subscription_id_identity
 
 }

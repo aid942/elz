@@ -63,9 +63,9 @@ variable "deploy_connectivity_resources" {
   type = bool
 }
 
-variable "subscription_id_connectivity" {
-  type = string
-}
+# variable "subscription_id_connectivity" {
+#   type = string
+# }
 
 #Management Variables
 variable "log_retention_in_days" {
@@ -88,15 +88,15 @@ variable "deploy_management_resources" {
   type = bool
 }
 
-variable "subscription_id_management" {
-  type = string
-}
+# variable "subscription_id_management" {
+#   type = string
+# }
 
 #Identity Variables
 variable "deploy_identity_resources" {
   type = bool
 }
 
-variable "subscription_id_identity" {
-  type = string
-}
+# variable "subscription_id_identity" {
+#   type = string
+# }

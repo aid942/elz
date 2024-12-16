@@ -26,7 +26,7 @@ connectivity_resources_tags = {
 
 connectivity_resources_location = "westus2"
 
-subscription_id_connectivity = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
+# subscription_id_connectivity = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
 
 log_retention_in_days = 1
 
@@ -40,8 +40,8 @@ management_resources_tags = {
 
 deploy_management_resources = false
 
-subscription_id_management = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
+# subscription_id_management = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
 
 deploy_identity_resources = false
 
-subscription_id_identity = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
+# subscription_id_identity = "bc6a1a6a-f14e-4a1c-8fb8-a0696d83d2a7"
