@@ -7,25 +7,46 @@
         "displayName": "Append Tags to new resource group deployments",
         "parameters": {
             "tagName": {
-                "TagValue": "AppID"
+                "value": "AppID"
+            },
+            "tagValue": {
+                "value": "tst"
             },
             "tagName2": {
-                "TagValue2": "CRIS"
+                "value": "CRIS"
+            },
+            "tagValue2": {
+                "value": "tst"
             },
             "tagName3": {
-                "TagValue3": "Compliance"
+                "value": "Compliance"
+            },
+            "tagValue3": {
+                "value": "tst"
             },
             "tagName4": {
-                "TagValue4": "DataClassfication"
+                "value": "DataClassfication"
+            },
+            "tagValue4": {
+                "value": "tst"
             },
             "tagName5": {
-                "TagValue5": "Environment"
+                "value": "Environment"
+            },
+            "tagValue5": {
+                "value": "tst"
             },
             "tagName6": {
-                "TagValue6": "Notify"
+                "value": "Notify"
+            },
+            "tagValue6": {
+                "value": "tst"
             },
             "tagName7": {
-                "TagValue7": "Owner"
+                "value": "Owner"
+            },
+            "tagValue7": {
+                "value": "tst"
             }
         },
         "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/appendTagsToRG",
